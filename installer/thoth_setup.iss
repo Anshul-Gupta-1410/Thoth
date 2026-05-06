@@ -76,11 +76,16 @@ Source: "..\identity.py";              DestDir: "{app}\app"; Flags: ignoreversio
 Source: "..\self_knowledge.py";        DestDir: "{app}\app"; Flags: ignoreversion
 Source: "..\version.py";               DestDir: "{app}\app"; Flags: ignoreversion
 Source: "..\updater.py";               DestDir: "{app}\app"; Flags: ignoreversion
+Source: "..\test_buddy_core.py";        DestDir: "{app}\app"; Flags: ignoreversion
+Source: "..\test_buddy_ui.py";          DestDir: "{app}\app"; Flags: ignoreversion
 ; ── Static assets (JS libraries) ──────────────────────────────────────────────
 Source: "..\static\*";                 DestDir: "{app}\app\static"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 ; ── Sounds ──────────────────────────────────────────────────────────────────────
 Source: "..\sounds\*.wav";              DestDir: "{app}\app\sounds"; Flags: ignoreversion
+
+; ── Buddy package ───────────────────────────────────────────────────────────────
+Source: "..\buddy\*.py";                DestDir: "{app}\app\buddy"; Flags: ignoreversion
 
 ; ── Channels package ─────────────────────────────────────────────────────────
 Source: "..\channels\__init__.py";      DestDir: "{app}\app\channels"; Flags: ignoreversion
@@ -190,6 +195,7 @@ Source: "..\tool_guides\*";           DestDir: "{app}\app\tool_guides"; Flags: i
 Source: "..\skills.py";                 DestDir: "{app}\app"; Flags: ignoreversion
 ; ── UI package (modular frontend) ─────────────────────────────────────────────────
 Source: "..\ui\__init__.py";            DestDir: "{app}\app\ui"; Flags: ignoreversion
+Source: "..\ui\buddy.py";               DestDir: "{app}\app\ui"; Flags: ignoreversion
 Source: "..\ui\bulk_select.py";         DestDir: "{app}\app\ui"; Flags: ignoreversion
 Source: "..\ui\chat.py";               DestDir: "{app}\app\ui"; Flags: ignoreversion
 Source: "..\ui\chat_components.py";    DestDir: "{app}\app\ui"; Flags: ignoreversion
